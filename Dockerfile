@@ -1,7 +1,8 @@
 # ============================================
 # ZeengBots — Sitio estático servido con nginx
 # ============================================
-FROM nginx:1.27-alpine
+FROM public.ecr.aws/nginx/nginx:1.27-alpine
+
 
 # Configuración personalizada de nginx (URLs limpias, caché, gzip)
 COPY nginx.conf /etc/nginx/conf.d/default.conf
