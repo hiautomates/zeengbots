@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Documentación — ZeengBots</title>
+<meta name="description" content="Centro de ayuda y documentación de ZeengBots: primeros pasos, canales, agente IA, catálogo y más.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav" id="nav">
+    <a class="logo" href="index.html"><img src="logo.png" alt="ZeengBots"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="pricing.html">Precios</a></li>
+      <li><a href="cases.html">Casos</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a class="active" href="docs.html">Docs</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="#">Iniciar Sesión</a>
+      <a class="btn btn-primary" href="#">Comenzar Gratis</a>
+      <button class="nav-toggle" aria-label="Abrir menú" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    </div>
+  </nav>
+</header>
+
+<section class="page-hero" style="padding-bottom:10px;">
+  <div class="container">
+    <span class="eyebrow cyan" style="color:var(--cyan); background:rgba(34,211,238,0.08);">📚 Centro de ayuda</span>
+    <h1>Documentación</h1>
+    <p>Todo lo que necesitas para configurar y sacar el máximo provecho de ZeengBots.</p>
+  </div>
+</section>
+
+<div class="container docs-layout">
+  <aside class="docs-side">
+    <h4>Primeros pasos</h4>
+    <ul>
+      <li><a class="on" href="#inicio-rapido">Inicio rápido</a></li>
+      <li><a href="#crear-agente">Crear tu agente IA</a></li>
+    </ul>
+    <h4>Canales</h4>
+    <ul>
+      <li><a href="#whatsapp">WhatsApp (QR y API)</a></li>
+      <li><a href="#otros-canales">Telegram, Instagram y más</a></li>
+    </ul>
+    <h4>Funciones</h4>
+    <ul>
+      <li><a href="#chat-en-vivo">Chat en Vivo</a></li>
+      <li><a href="#catalogo">Catálogo y pedidos</a></li>
+      <li><a href="#citas">Citas y calendario</a></li>
+      <li><a href="#difusion">Difusión masiva</a></li>
+    </ul>
+    <h4>Cuenta</h4>
+    <ul>
+      <li><a href="#equipo">Miembros del equipo</a></li>
+      <li><a href="#facturacion">Planes y facturación</a></li>
+    </ul>
+  </aside>
+
+  <main class="docs-main">
+    <h2 id="inicio-rapido">Inicio rápido</h2>
+    <p>ZeengBots queda funcionando en menos de 5 minutos. El flujo completo:</p>
+    <ol>
+      <li><strong>Crea tu cuenta gratis.</strong> Solo necesitas tu email; no pedimos tarjeta de crédito.</li>
+      <li><strong>Describe tu negocio.</strong> El asistente de configuración te hace unas pocas preguntas (industria, productos o servicios, horarios).</li>
+      <li><strong>La IA configura tu agente.</strong> A partir de una de las 50+ plantillas por industria, se generan la personalidad, las respuestas y las restricciones.</li>
+      <li><strong>Conecta un canal.</strong> Escanea el código QR de WhatsApp o instala el Web Chat en tu sitio.</li>
+      <li><strong>Prueba y publica.</strong> Escríbele a tu propio número y ajusta lo que quieras desde el panel.</li>
+    </ol>
+    <div class="callout"><b>Tip:</b> empieza con WhatsApp QR para probar en minutos y migra a la API oficial cuando tu volumen crezca.</div>
+
+    <hr class="docs-divider">
+
+    <h2 id="crear-agente">Crear tu agente IA</h2>
+    <p>Tu agente no es un chatbot de botones: es un agente conversacional con personalidad configurable.</p>
+    <h3>Personalidad</h3>
+    <p>En <code>Agente → Personalidad</code> defines su nombre, tono (formal, cercano, divertido), idioma y estilo de respuesta. Por ejemplo, "Luna" de Bella Vida Spa responde con calidez y emojis; el agente de una firma de abogados responde formal y conciso.</p>
+    <h3>Conocimiento y restricciones</h3>
+    <ul>
+      <li><strong>Base de conocimiento:</strong> agrega tus productos, servicios, precios, horarios y políticas. El agente solo responde con esta información.</li>
+      <li><strong>Restricciones:</strong> define temas prohibidos. El agente nunca inventa datos ni se sale del guion: si no sabe algo, ofrece pasar con un humano.</li>
+      <li><strong>Funciones:</strong> activa qué puede hacer: tomar pedidos, agendar citas, compartir catálogo, escalar a tu equipo.</li>
+    </ul>
+
+    <hr class="docs-divider">
+
+    <h2 id="whatsapp">WhatsApp (QR y API)</h2>
+    <h3>Conexión por QR</h3>
+    <p>Disponible en todos los planes. Ve a <code>Canales → WhatsApp QR</code>, escanea el código con tu teléfono (igual que WhatsApp Web) y listo. Ideal para empezar y para volúmenes pequeños y medianos.</p>
+    <h3>API oficial de WhatsApp</h3>
+    <p>Disponible desde el plan Basic. Mayor estabilidad, número verificado, botones interactivos y plantillas aprobadas para difusión. La conexión se hace desde <code>Canales → WhatsApp API</code> siguiendo el asistente de verificación de Meta.</p>
+    <div class="callout"><b>Importante:</b> la difusión masiva a contactos que no te han escrito primero requiere la API oficial y plantillas aprobadas.</div>
+
+    <hr class="docs-divider">
+
+    <h2 id="otros-canales">Telegram, Instagram, Facebook y Web Chat</h2>
+    <ul>
+      <li><strong>Telegram</strong> (Basic+): crea un bot con @BotFather, pega el token en <code>Canales → Telegram</code> y queda conectado.</li>
+      <li><strong>Instagram y Facebook</strong> (Pro): vincula tu página de Facebook y tu cuenta profesional de Instagram con un clic mediante el login de Meta.</li>
+      <li><strong>Web Chat</strong> (todos los planes): copia el fragmento de código desde <code>Canales → Web Chat</code> y pégalo antes de <code>&lt;/body&gt;</code> en tu sitio.</li>
+    </ul>
+    <p>Todos los canales llegan a la misma bandeja unificada, con el historial completo de cada contacto sin importar por dónde escriba.</p>
+
+    <hr class="docs-divider">
+
+    <h2 id="chat-en-vivo">Chat en Vivo</h2>
+    <p>Desde la bandeja puedes intervenir en cualquier conversación:</p>
+    <ul>
+      <li><strong>Pausar el bot por contacto:</strong> el botón "Pausar IA" detiene al agente solo en esa conversación; el resto sigue automatizado.</li>
+      <li><strong>Responder como humano:</strong> tus mensajes salen por el mismo canal, sin que el cliente cambie de chat.</li>
+      <li><strong>Devolver el control:</strong> al reactivar la IA, el agente retoma con todo el contexto de lo que conversaste.</li>
+    </ul>
+
+    <hr class="docs-divider">
+
+    <h2 id="catalogo">Catálogo y pedidos</h2>
+    <p>Sube tus productos en <code>Catálogo</code> con foto, precio, variantes y stock. El agente puede:</p>
+    <ul>
+      <li>Mostrar productos cuando el cliente pregunta ("¿tienes tortas de chocolate?").</li>
+      <li>Armar el pedido completo: productos, cantidades, dirección y método de pago.</li>
+      <li>Confirmar el resumen con el cliente y notificarte el pedido listo para preparar.</li>
+    </ul>
+
+    <hr class="docs-divider">
+
+    <h2 id="citas">Citas y calendario</h2>
+    <p>En el plan Pro, conecta Google Calendar desde <code>Integraciones → Google Calendar</code>. Define tus horarios disponibles y duración de cada servicio. El agente ofrece espacios reales, agenda directamente en tu calendario, envía recordatorios y permite reagendar.</p>
+
+    <hr class="docs-divider">
+
+    <h2 id="difusion">Difusión masiva</h2>
+    <p>Desde <code>Difusión</code> puedes enviar campañas segmentadas a tus contactos: por etiqueta, por última compra o por canal. Programa el envío, personaliza con variables como el nombre del cliente y mide aperturas y respuestas en las métricas.</p>
+
+    <hr class="docs-divider">
+
+    <h2 id="equipo">Miembros del equipo</h2>
+    <p>Invita a tu equipo desde <code>Configuración → Miembros</code> (3 en Basic, 7 en Pro). Cada miembro puede atender el Chat en Vivo con su propio acceso, y puedes asignar conversaciones a personas específicas.</p>
+
+    <hr class="docs-divider">
+
+    <h2 id="facturacion">Planes y facturación</h2>
+    <p>Gestiona tu plan en <code>Configuración → Facturación</code>. Los cambios de plan son inmediatos con cobro prorrateado. Te avisamos al alcanzar el 80% de tus chats o mensajes mensuales. ¿Dudas? Escríbenos a <a href="mailto:soporte@zeengbots.com" style="color:var(--blue-soft);">soporte@zeengbots.com</a>.</p>
+  </main>
+</div>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>¿No encuentras lo que buscas?</h2>
+    <p class="sub">Nuestro equipo de soporte responde 24/7.</p>
+    <a class="btn btn-primary btn-lg" href="contact.html">Contactar Soporte</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="about">
+        <a class="logo" href="index.html"><img src="logo.png" alt="ZeengBots"></a>
+        <p>Automatiza tu WhatsApp con inteligencia artificial. La plataforma más completa para gestionar tu negocio por WhatsApp.</p>
+      </div>
+      <div>
+        <h4>Producto</h4>
+        <ul>
+          <li><a href="pricing.html">Precios</a></li>
+          <li><a href="cases.html">Casos de Éxito</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="docs.html">Características</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="docs.html">Documentación</a></li>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Reembolsos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Soporte</h4>
+        <ul>
+          <li><a href="mailto:soporte@zeengbots.com">soporte@zeengbots.com</a></li>
+          <li><a href="docs.html">Centro de Ayuda</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ZeengBots. Todos los derechos reservados.</span>
+      <a class="to-top" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Volver arriba</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Resaltar sección activa del sidebar al hacer clic
+document.querySelectorAll('.docs-side a').forEach(a => {
+  a.addEventListener('click', () => {
+    document.querySelectorAll('.docs-side a').forEach(x => x.classList.remove('on'));
+    a.classList.add('on');
+  });
+});
+</script>
+</body>
+</html>

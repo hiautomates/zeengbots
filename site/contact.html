@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — ZeengBots</title>
+<meta name="description" content="Contacta al equipo de ZeengBots: soporte, ventas y alianzas. Respondemos 24/7.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav" id="nav">
+    <a class="logo" href="index.html"><img src="logo.png" alt="ZeengBots"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="pricing.html">Precios</a></li>
+      <li><a href="cases.html">Casos</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="docs.html">Docs</a></li>
+      <li><a class="active" href="contact.html">Contacto</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="#">Iniciar Sesión</a>
+      <a class="btn btn-primary" href="#">Comenzar Gratis</a>
+      <button class="nav-toggle" aria-label="Abrir menú" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    </div>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow green">Estamos para ayudarte</span>
+    <h1>Hablemos de tu <span class="accent-green">negocio</span></h1>
+    <p>¿Dudas sobre la plataforma, los planes o la marca blanca? Escríbenos y te respondemos en menos de 24 horas.</p>
+  </div>
+</section>
+
+<div class="container contact-layout">
+  <div class="contact-info">
+    <div class="info-card">
+      <div class="ico">📧</div>
+      <div>
+        <h3>Soporte por email</h3>
+        <p>Para dudas técnicas y de cuenta.<br><a href="mailto:soporte@zeengbots.com">soporte@zeengbots.com</a></p>
+      </div>
+    </div>
+    <div class="info-card">
+      <div class="ico">💬</div>
+      <div>
+        <h3>Chat en vivo</h3>
+        <p>Habla con nuestro propio agente IA (sí, usamos ZeengBots) desde el widget de la esquina, 24/7.</p>
+      </div>
+    </div>
+    <div class="info-card">
+      <div class="ico">⭐</div>
+      <div>
+        <h3>Ventas y plan Empresarial</h3>
+        <p>Volúmenes altos, SLA e integraciones a medida.<br><a href="mailto:ventas@zeengbots.com">ventas@zeengbots.com</a></p>
+      </div>
+    </div>
+    <div class="info-card">
+      <div class="ico">🤝</div>
+      <div>
+        <h3>Agencias y marca blanca</h3>
+        <p>Lanza tu propia plataforma de chatbots con tu marca y dominio.<br><a href="mailto:soporte@zeengbots.com">soporte@zeengbots.com</a></p>
+      </div>
+    </div>
+    <div class="info-card">
+      <div class="ico">📚</div>
+      <div>
+        <h3>Centro de ayuda</h3>
+        <p>Muchas respuestas ya están en la <a href="docs.html">documentación</a>: guías de canales, agente IA, catálogo y más.</p>
+      </div>
+    </div>
+  </div>
+
+  <form class="contact-form" id="contactForm">
+    <h2>Envíanos un mensaje</h2>
+    <p>Completa el formulario y te contactamos en menos de 24 horas hábiles.</p>
+    <div class="f-grid">
+      <div class="f-field">
+        <label for="nombre">Nombre *</label>
+        <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+      </div>
+      <div class="f-field">
+        <label for="email">Email *</label>
+        <input id="email" name="email" type="email" placeholder="tu@email.com" required>
+      </div>
+      <div class="f-field">
+        <label for="empresa">Empresa</label>
+        <input id="empresa" name="empresa" type="text" placeholder="Nombre de tu negocio">
+      </div>
+      <div class="f-field">
+        <label for="whatsapp">WhatsApp</label>
+        <input id="whatsapp" name="whatsapp" type="tel" placeholder="+57 300 000 0000">
+      </div>
+      <div class="f-field full">
+        <label for="tema">Tema *</label>
+        <select id="tema" name="tema" required>
+          <option value="">Selecciona un tema…</option>
+          <option>Soporte técnico</option>
+          <option>Planes y facturación</option>
+          <option>Plan Empresarial</option>
+          <option>Marca blanca / Agencias</option>
+          <option>Otro</option>
+        </select>
+      </div>
+      <div class="f-field full">
+        <label for="mensaje">Mensaje *</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu negocio y en qué te podemos ayudar…" required></textarea>
+      </div>
+    </div>
+    <button class="btn btn-primary btn-lg" type="submit" style="width:100%; margin-top:20px;">Enviar mensaje</button>
+    <div class="form-ok" id="formOk">✓ ¡Mensaje enviado! Te responderemos en menos de 24 horas hábiles.</div>
+  </form>
+</div>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>¿Prefieres probarlo tú mismo?</h2>
+    <p class="sub">Crea tu agente gratis en 5 minutos, sin tarjeta de crédito.</p>
+    <a class="btn btn-primary btn-lg" href="#">🤖 Comenzar Gratis</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="about">
+        <a class="logo" href="index.html"><img src="logo.png" alt="ZeengBots"></a>
+        <p>Automatiza tu WhatsApp con inteligencia artificial. La plataforma más completa para gestionar tu negocio por WhatsApp.</p>
+      </div>
+      <div>
+        <h4>Producto</h4>
+        <ul>
+          <li><a href="pricing.html">Precios</a></li>
+          <li><a href="cases.html">Casos de Éxito</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="docs.html">Características</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="docs.html">Documentación</a></li>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Reembolsos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Soporte</h4>
+        <ul>
+          <li><a href="mailto:soporte@zeengbots.com">soporte@zeengbots.com</a></li>
+          <li><a href="docs.html">Centro de Ayuda</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ZeengBots. Todos los derechos reservados.</span>
+      <a class="to-top" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Volver arriba</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  // Aquí conecta tu backend o servicio de formularios (Formspree, tu API, etc.)
+  document.getElementById('formOk').classList.add('show');
+  this.reset();
+});
+</script>
+</body>
+</html>
